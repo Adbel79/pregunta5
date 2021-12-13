@@ -7,7 +7,7 @@ botonCargar.addEventListener("click", () => {
         let lista = document.getElementById("informacion");
         for (var i in json) {
             let li = document.createElement("li");
-            li.innerHTML = json[i].name + " vive en " + json[i].city + "<br>";
+            li.innerHTML = json[i].name + ". Vive en: " + json[i].city + "<br>";
             lista.appendChild(li);
         }
     })
